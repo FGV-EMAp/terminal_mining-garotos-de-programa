@@ -1,3 +1,7 @@
+## Questão 1
+
+### wc - conta linhas, palavras e caracteres, nessa ordem
+
 ## Questao 3 ate agora
 
 ### comando que criou arquivo com todas as primeiras linhas
@@ -9,4 +13,4 @@ criou o arquivo pLinhaNovo.txt
 
 ### serie de comandos que aparentemente fununciou
 `export LC_ALL=C
-sort pLinhaNovo1.txt > sortPLinhaNovo.txt01~`
+sort pLinhaNovo1.txt > sortPLinhaNovo.txt01~
