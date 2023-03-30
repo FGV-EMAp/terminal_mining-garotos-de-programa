@@ -22,7 +22,10 @@ criou o arquivo pLinhaNovo.txt
 ```
 export LC_ALL=C
 sort pLinhaNovo1.txt > sortPLinhaNovo.txt01
+
 ```
+
+## adicionar questão 3 certa e questão 2
 
 ## Questão 4
 
