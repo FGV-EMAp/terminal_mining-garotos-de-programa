@@ -1,0 +1,258 @@
+#!/usr/bin/bash
+
+echo "awk 'FNR==1 {print $0}' Dados/machado/*/*.txt > pLinha.txt | sed 's/, */, /g'
+
+iconv -f ISO-8859-1 -t UTF-8 pLinha.txt | awk -F', ' '{ $0= $NF " " $0;print $0 |"sort -k1"}' > final.txt
+
+sed -i 's/^[^.,]*[.,]//' final.txt
+
+sed -i 's/^[ \t]*//' final.txt"
+
+minha-resposta="Poesias dispersas, 1855-1939
+Três Tesouros Perdidos, 1858
+O passado, o presente e o futuro da literatura, 1858
+Bagatela, 1859
+Idéias sobre o Teatro, 1859
+Revista dos Teatros, 1859
+Aquarelas, 1859
+A reforma pelo jornal, 1859
+O Jornal e o Livro, 1859
+Os Imortais, 1859
+José de Alencar: Iracema, 186
+Revista Dramática, 1860
+Hoje avental, amanhã luva, 1860
+Comentários da Semana, 1861
+Cronicas do Dr. Semana, 1861
+Queda que as mulheres têm  para os tolos, 1861
+Desencantos, 1861
+O País das quimeras, 1862
+crítica variada no Diário do Rio Janeiro, 1862
+Flores e Frutos, de Bruno Seabra, 1862
+Pareceres de Machado de Assis, 1862
+Cronicas (O Futuro), 1862
+Carta ao Sr. Bispo do RJ, 1862
+Peregrinação pela província de S. Paulo. por A. E. Zaluar, 1863
+Revelações, de A. E. Zaluar, 1863
+O caminho da porta - O protocolo, 1863
+Casada e viúva, 1864
+O anjo das donzelas, 1864
+Questão de Vaidade, 1864
+Virginius, 1864
+Crisálidas, 1864
+htm CRÔNICA, Ao Acaso, 1864.htm
+Cinco mulheres, 1865
+O ideal do crítico, 1865
+Suplício de uma uma mulher, 1865
+A pianista, 1866
+Astúcias de marido, 1866
+Diana, 1866
+Felicidade pelo casamento, 1866
+Fernando e Fernanda, 1866
+O oráculo, 1866
+O pai, 1866
+O que são as moças, 1866
+Uma excursão milagrosa, 1866
+Álvares de Azevedo: Lira dos vinte anos, 1866
+Fagundes Varela - Cantos e fantasias, 1866
+J.M. de Macedo: O culto do dever, 1866
+Junqueira Freire - Inspirações do claustro, 1866
+Porto Alegre: Colombo, 1866
+Propósito, 1866
+Os Deuses de casaca, 1866
+Francisca, 1867
+História de uma lágrima, 1867
+O último dia de um poeta, 1867
+Onda, 1867
+Possível e impossível, 1867
+Não é mel para boca de asno, 1868
+O carro n° 13, 1868
+Castro Alves, 1868
+O anjo Rafael, 1869
+A vida eterna, 1870
+Contos Fluminenses, 1870
+O capitão Mendonça, 1870
+O rei dos caiporas, 1870
+Falenas, 1870
+Ayres e Vergueiro, 1871
+Mariana, 1871
+O Caminho de Damasco, 1871
+Badaladas, 1871
+htm CONTO, Almas Agradecidas, 1871.htm
+Quem Não Quer Ser Lobo, 1872
+Rui de Leão, 1872
+Uma Águia sem Asas, 1872
+Uma loureira, 1872
+Lúcio de Mendonça: Névoas matutinas, 1872
+Decadência de dois grandes homens, 1873
+Historias da Meia-Noite, 1873
+Nem uma nem outra, 1873
+Quem conta um conto, 1873
+Tempo de crise, 1873
+Um Homem superior, 1873
+Notícia da atual literatura brasileira, 1873
+Miloca, 1874
+Muitos Anos Depois, 1874
+Os óculos de Pedro Antão, 1874
+Um dia de entrudo, 1874
+Valério, 1874
+A Mágoa do infeliz Cosme, 1875
+A última receita, 1875
+Antes que cases, 1875
+Brincar com fogo, 1875
+Casa, não casa, 1875
+O sainete, 1875
+Onze anos depois, 1875
+Um esqueleto, 1875
+Fagundes Varela, 1875
+O Visconde de Castilho, 1875
+Americanas, 1875
+D. Mônica, 1876
+Encher tempo, 1876
+História de uma fita azul, 1876
+Longe dos Olhos, 1876
+O Astrólogo, 1876
+O Passado, o passado, 1876
+Sem olhos, 1876
+To be or not to be, 1876
+Historia de quinze dias, 1876
+A melhor das noivas, 1877
+Silvestre, 1877
+Um Almoço, 1877
+Um Ambicioso, 1877
+A Herança, 1878
+Antes da Missa, 1878
+Conversão de um avaro, 1878
+Dívida extinta, 1878
+Elogio da Vaidade, 1878
+Filosofia de um Par de Botas, 1878
+Folha Rota, 1878
+O Califa de Platina, 1878
+O Machete, 1878
+Um Cão de Lata ao Rabo, 1878
+Eça De Queirós: O Primo Basílio, 1878
+Notas semanais, 1878
+Historia dos Trinta Dias, 1878
+O Bote de Rapé, 1878
+Crítica, Francisco de Castro: Harmonias errantes, 1878.
+A chave, 1879
+Um para o outro, 1879
+A nova geração, 1879
+Memórias Póstumas de Brás Cubas, 1880
+Tu, só tu, puro amor, 1880
+A mulher pálida, 1881
+O Caso da Viúva, 1881
+Cherchez la Femme, 1881
+Letra Vencida, 1882
+O imortal, 1882
+O programa, 1882
+Papéis Avulsos, 1882
+Carlos Jansen: Contos seletos das mil e uma noites, 1882
+A idéia do Ezequiel Maia, 1883
+Cantiga velha, 1883
+História comum, 1883
+Médico é remédio, 1883
+Metafísica das Rosas, 1883
+O destinado, 1883
+Questões de maridos, 1883
+Três conseqüências, 1883
+Troca de datas, 1883
+Vidros quebrados, 1883
+Raimundo Correia: Sinfonias, 1883
+José de Alencar , 1883
+A Carteira, 1884
+A Viúva Sobral, 1884
+Entre duas datas, 1884
+Histórias sem Data, 1884
+O Caso do Romualdo, 1884
+O contrato, 1884
+O Melhor Remédio, 1884
+Trina e Una, 1884
+Uma Carta, 1884
+Vinte Anos! Vinte Anos!, 1884
+Alberto de Oliveira: Meridionais, 1884
+Pedro Luís, 1884
+Habilidoso, 1885
+Só, 1885
+Viagem à roda de mim mesmo, 1885
+Enéias Galvão: Miragens, 1885
+Curta História, 1886
+Pobre Cardeal, 1886
+Terpsícore, 1886
+Um Dístico, 1886
+L. L. Fernandes Pinheiro Júnior: Tipos e quadros, 1886
+Gazeta de Holanda, 1886
+Antes a Rocha Tarpéia, 1887
+Identidade, 1887
+Sales, 1887
+José de Alencar: O Guarani, 1887
+Joaquim Serra, 1888
+O futuro dos argentinos, 1888
+Dona Jucunda, 1889
+A Morte de Francisco Otaviano, 1889
+Como se inventaram os almanaques, 1890
+Secretaria de Agricultura, 1890
+Pobre Finoca!, 1891
+Um Sonho e Outro Sonho, 1892
+Uma Partida, 1892
+A semana, 1892
+Entre 1892 e 1894, 1892
+htm Conto, O Caso Barreto, 1892.htm
+Um Quarto de Século, 1893
+Vênus! Divina Vênus!, 1893
+Henrique Chaves, 1893
+A inglesinha Barcelos, 1894
+João Fernandes, 1894
+Orai por ele!, 1895
+Uma Noite, 1895
+Várias histórias, 1896
+Henriqueta Renan, 1896
+Flor Anônima, 1897
+Uma por Outra, 1897
+Discursos na Academia Brasileira de Letras, 1897
+Henrique Lombaerts, 1897
+Magalhães de Azeredo: Procelárias, 1898
+O Velho Senado, 1898
+Páginas Recolhidas, 1899
+7.	Cenas da vida amazônica, de José Veríssimo, 1899
+Garrett, 1899
+Dom Casmurro, 1899
+Não Consultes Médico, 1899
+Eça de Queirós, 1900
+Eduardo Prado, 1901
+Ocidentais, 1901
+Magalhães de Azeredo: Horas sagradas; Mário de Alencar: Versos, 1902
+Jogo do Bicho, 1904
+Oliveira Lima: Secretário DEl-Rei, 1904
+A paixão de Jesus, 1904
+O Escrivão Coimbra, 1906
+Relíquias de Casa Velha, 1906
+Um Incêndio, 1906
+Crítica teatral, 1906
+Joaquim Nabuco: Pensées détachées et souvenirs, 1906
+Gonçalves Dias, 1906
+Lição de Botânica, 1906
+O Almada, 1910
+Un cuento endemoniado  e La mujer misteriosa, de Guilherme Malta, 1938
+As Forcas Caudinas, 1956
+Josï¿½ de Alencar : Mï¿½e, Crï¿½tica, A crï¿½tica teatral, A crï¿½tica teatral. Josï¿½ de Alencar : Mï¿½e,
+1906 MISCELÂNEA, A Estátua de José de Alencar,1906
+1874 ROMANCE, A Mão e a Luva,1874
+1883 CRÔNICA, Balas de estalo,1883
+1888 CRÔNICA, Bons dias,1888
+1885 ROMANCE, Casa Velha,1885
+1885 ROMANCE, Casa Velha,1885
+Cartas Fluminenses,1867 CRÔNICA,Cartas Fluminenses,1867
+1904 ROMANCE, Esaú e Jacó,1904
+1876 ROMANCE, Helena,1876
+1878 ROMANCE, Iaiá Garcia,1878
+1908 ROMANCE, Memorial de Aires,1908
+HOMEM DE MELO.  Crítica, A Constituinte perante a história, pelo sr. HOMEM DE MELO. 
+1872 Conto, Qual dos Dois,1872
+1864 TEATRO, Quase ministro,1864
+1891 ROMANCE, Quincas Borba,1891
+1872 ROMANCE, Ressurreição,1872
+1865 TRADUÇÃO, Suplício de uma uma mulher,1865
+1865 TRADUÇÃO, Suplício de uma uma mulher,1865
+1866 TRADUÇÃO, Suplício de uma uma mulher,1866
+"
+echo $minha-resposta > resposta_ex_3
